@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "type": "definition",
+        "question": "RAGとは何か？",
+        "ideal_answer": "RAG（Retrieval-Augmented Generation）とは、外部知識を検索して取り込みながら、生成AIがより正確な回答を出す手法のこと。"
+    },
+    {
+        "id": 2,
+        "type": "definition",
+        "question": "Embeddingとはどういう意味か？",
+        "ideal_answer": "Embeddingとは、テキストなどの情報をベクトル空間に変換し、意味的な類似性を数値で扱えるようにする手法。"
+    },
+    {
+        "id": 3,
+        "type": "definition",
+        "question": "Retrieverとは何か？",
+        "ideal_answer": "Retrieverは、ユーザーの質問に関連する文書や情報を検索・抽出する役割を担うRAGの構成要素。"
+    },
+    {
+        "id": 4,
+        "type": "procedure",
+        "question": "RAGによる検索から生成までの流れは？",
+        "ideal_answer": "まずRetrieverが関連文書を取得し、それを元に生成AIが回答を生成する。検索と生成を組み合わせる流れ。"
+    },
+    {
+        "id": 5,
+        "type": "procedure",
+        "question": "ドキュメントをチャンクに分ける理由は？",
+        "ideal_answer": "長い文書を小さな単位に分けることで、検索精度を上げ、生成モデルが扱いやすくするため。"
+    },
+    {
+        "id": 6,
+        "type": "procedure",
+        "question": "Embeddingベクトルはどう使われるか？",
+        "ideal_answer": "Embeddingベクトルは、質問と文書の意味的な近さを計算するために使われ、類似文書の検索に用いられる。"
+    },
+    {
+        "id": 7,
+        "type": "example",
+        "question": "医療ガイドライン検索でRAGがどう使える？",
+        "ideal_answer": "医療ガイドラインの中から該当部分を検索し、生成AIが要約・説明を加えることで、医療従事者の情報収集を支援できる。"
+    },
+    {
+        "id": 8,
+        "type": "example",
+        "question": "院内FAQの強化にRAGがどう活用される？",
+        "ideal_answer": "よくある質問に対し、過去のマニュアルや記録から関連情報を検索し、自然な回答を生成することでFAQの精度が向上する。"
+    },
+    {
+        "id": 9,
+        "type": "example",
+        "question": "RAGは医師の説明補助にどう役立つ？",
+        "ideal_answer": "RAGは患者の質問に関連する医学情報を抽出し、医師が分かりやすく伝えるための補助資料を生成できる。"
+    },
+    {
+        "id": 10,
+        "type": "comparison",
+        "question": "Top-k検索とMMRの違いは？",
+        "ideal_answer": "Top-kは関連度の高い文書をそのまま上位から取得するが、MMRは内容の多様性も考慮して選択する。"
+    },
+    {
+        "id": 11,
+        "type": "comparison",
+        "question": "BM25とDense Retrieverの違いは？",
+        "ideal_answer": "BM25は単語の出現頻度に基づいたルールベース検索、Dense Retrieverは意味ベクトルに基づいたニューラル検索を行う。"
+    },
+    {
+        "id": 12,
+        "type": "comparison",
+        "question": "Hybrid Retrieverの利点は何か？",
+        "ideal_answer": "ルールベースのBM25と意味ベースのDenseの長所を組み合わせて、より精度と網羅性の高い検索を実現できる。"
+    },
+    {
+        "id": 13,
+        "type": "limitation",
+        "question": "RAGの限界や課題は何か？",
+        "ideal_answer": "誤情報の混入、文脈の誤解釈、検索文書の質によって生成結果が不安定になる可能性がある。"
+    },
+    {
+        "id": 14,
+        "type": "limitation",
+        "question": "医療現場でRAGを使う際の注意点は？",
+        "ideal_answer": "信頼性の低い文書を使うと誤った医療判断に繋がるため、情報源の精査が重要。"
+    },
+    {
+        "id": 15,
+        "type": "limitation",
+        "question": "生成AIの誤情報対策には何が必要か？",
+        "ideal_answer": "検索対象の品質管理と、生成結果のフィルタリングや人間によるレビュー体制が必要。"
+    }
+]
